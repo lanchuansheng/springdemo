@@ -1,0 +1,23 @@
+person:
+  name: zhangsan${random.uuid}
+  age: 32
+
+pets:
+  -cat
+  -dog
+animal: {name: sss, age: 33}
+spring:
+  profiles:
+    active: test
+
+
+---
+server:
+  port: 8083
+spring:
+  profiles: dev
+---
+server:
+  port: 8084
+spring:
+  profiles: test
